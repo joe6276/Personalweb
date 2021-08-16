@@ -1,0 +1,526 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,300;0,500;0,700;1,100;1,300;1,500&family=Ubuntu:ital,wght@0,300;0,500;0,700;1,500&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+   
+
+
+}
+.m-width{
+    width: 1300px;
+    padding:  0 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+.navbar{
+    position: fixed;
+    width:100%;
+    height: 50px;
+    padding: 30px;
+    background-color: crimson;
+    z-index: 999;
+    font-family: 'ubuntu', 'Roboto';
+}
+
+.navbar.logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+ul.menu li{
+    list-style:none;
+    display:inline-block;
+}
+ul.menu li a{
+    color:#111;
+    font-size: 18sp;
+    font-weight: 700;
+    margin-left: 25px;
+    transition: color 0.5s ease-in;
+}
+
+
+ul.menu li a:hover{
+    color:wheat;
+}
+ 
+
+
+/* home */
+
+.home{
+    background:url("Images/laptop.jpg") no-repeat center;
+    display: flex;
+    height: 100vh;
+    color:"#fff";
+    min-height: 500px;
+    font-family: 'Ubuntu';
+
+}
+.h-width{
+    margin: auto 0px auto 500px;
+
+}
+.c-width h2{
+    align-items: center;
+    margin-left: 250px;
+}
+.text1{
+    font-size: 35px;
+}
+.text2{
+    font-size: 75px;
+    font-weight: 600;
+}
+.text3{
+    font-size: 35px;
+}
+/* menu */
+.nav-menu{
+    color:#fff;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+      background-color: olive;
+    } 
+  }
+
+/* about  */
+section{
+    padding: 100px  0;
+}
+.title{
+    font-family: 'Ubuntu', 'Roboto';
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;}
+
+ .about{
+font-family: 'Ubuntu', 'Roboto';
+background-color: lightgray;
+
+}
+.title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width:180px;
+    height:3px;
+    background: black;
+    transform: translateX(-50%);
+
+}
+
+.title::after{
+    content: "Know me ";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    font-size: 20px;
+    color: brown;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+
+}
+.title23{
+    font-family: 'Ubuntu', 'Roboto';
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;}
+
+.title23::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width:180px;
+    height:3px;
+    background: black;
+    transform: translateX(-50%);
+
+}
+
+.title23::after{
+    content: "contact me ";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    font-size: 20px;
+    color: brown;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+
+}
+
+.title1{
+    font-family: 'Ubuntu', 'Roboto';
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;}
+
+.title1::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width:180px;
+    height:3px;
+    background: #fff;
+    transform: translateX(-50%);
+
+}
+
+.title1::after{
+    content: "what i like ";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    font-size: 20px;
+    color: #fff;
+    padding: 5px;
+    background: black;
+    transform: translateX(-50%);
+
+}
+
+
+
+.title2{
+    font-family: 'Ubuntu', 'Roboto';
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;}
+
+.title2::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width:180px;
+    margin-bottom: 20px;
+    height:3px;
+    background: #111;
+    transform: translateX(-50%);
+
+}
+
+.title2::after{
+    content: "what i possess ";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    font-size: 20px;
+    color: brown;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+
+}
+
+
+
+
+.column-left img{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    object-fit: fill;
+}
+.about-container , .contact, .contact-container{
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.column-left{
+width: 45%;
+}
+.column-right{
+    width: 55%;
+   margin-right: 20px;
+
+}
+ .column-right p{
+text-align: justify;
+
+ }
+
+       
+
+        /* services */
+
+        .services{
+            background: black;
+            color: #fff;
+        }
+        .services .services-container .card{
+            width:calc(25% - 20px);
+            text-align: center;
+            border-radius: 6px;
+            padding: 20px 25px;
+            cursor: pointer;
+            background: #222;
+            font-weight: 700;
+
+        }
+
+        .services-container{
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 10px;
+            display: flex;
+            flex-direction: wrap;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 3s ease-in;
+        }
+        .card i{
+            color:coral;
+            font-size: 50px;
+        }
+        .box{
+            transition: all 3s ease-in;
+        }
+        .card:hover .box{
+           transform: scale(1.05);
+        }
+
+
+      /* skills */
+      .skills-container{
+          font-family: 'Ubuntu';
+          display: flex;
+        align-items: center;
+        margin: auto 20px auto 80px ;
+        
+        justify-content: space-between;
+      }
+      .skills-container .column1{
+          width:calc(50%-30px);
+
+      }
+      .column-left1{
+        width: 45%;
+        }
+        .column-right1{
+            width: 55%;
+           margin-left:70px;
+        
+        }
+         .column-left1 p{
+        text-align: justify;
+        
+         }
+
+         .skills{
+             color: gray;
+             color: #111;
+             background-color: lightgray;
+             height: 100vh;
+             font-weight: 300;
+         }
+         .bar{
+             margin-bottom: 15px;
+         }
+         .info{
+             display: flex;
+             justify-content: space-between;
+             margin-bottom: 20px;
+             align-items: center;
+         }
+         .info span {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .line-html ,.line-css,.line-js,.line-android, .line-react  {
+           height: 5px;
+           width: 100%;
+           background: gray;
+           position: relative;
+        }
+
+        .line-react::before {
+
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:80%;
+            height: 100%;
+            background: crimson
+         
+        }
+
+        .line-android::before {
+
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:100%;
+            height: 100%;
+            background: crimson
+         
+        }
+        .line-react::before {
+
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:40%;
+            height: 100%;
+            background: crimson
+         
+        }
+        .line-css::before {
+
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:80%;
+            height: 100%;
+            background: crimson
+         
+        }
+        .line-html::before {
+
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:90%;
+            height: 100%;
+            background: crimson
+         
+        }
+
+        .line-js::before {
+
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:70%;
+            height: 100%;
+            background: crimson
+        }
+
+        .contact{
+            font-family: 'Ubuntu','Poppin';
+            background-color: lightgray;
+        }
+        .textc{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .parc{
+            text-align: justify;
+        }
+        .ccontact-left{
+            width: calc(50%-20px);
+            margin-left: 20px; 
+          padding: 30px }   
+          .icons{
+              margin :10px 0;
+          }   
+          .row{
+              display: flex;
+              height: 65%;
+              align-items: center;
+          }
+          .infos{
+              margin-left: 30px;
+              margin-bottom: 10px;
+          }
+          .infos i{
+              color: black;
+              font-weight: 900;
+              
+          }
+          .contactme{
+            width: calc(50%-20px);
+            margin-left: 250px; 
+            align-items: center;
+            padding: 20px;
+        
+         } 
+
+        .name-field, .message-field, .email-field, .btn{
+            margin-bottom: 20px;
+        }
+       
+        .name-field input,  .email-field input{
+            
+            height: 30px;
+            width:100%;
+            border:  1px solid lightgray;
+            border-radius: 6px;
+            outline:  none;
+            padding:0 15px;
+            font-size: 17px;
+            font-family: 'Poppins';
+        }
+        .message-field textarea{
+            height: 80px;
+            width:100%;
+            border:  1px solid lightgray;
+            font-size: 17px;
+            font-family: 'Poppins';
+            border-radius: 6px;
+            outline:  none;
+            padding:0 15px;
+        }
+        .submitbtn{
+            height: 37px;
+            width:100px;
+        }
+        .resetbtn{
+            height: 37px;
+            width:100px;
+            float: right;
+        }
+        #loaders {
+            text-align: center;
+        }
+        #loaders img {
+            width: 150px;
+            margin: 0 auto;
+            display: none;
+        }
+        .messagetext{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .name-span{
+            color:crimson
+        }
+      
