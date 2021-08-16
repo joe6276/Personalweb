@@ -32,5 +32,5 @@ function sendEmail(e) {
 
 function resetForm(e) {
     e.preventDefault();
-   sendEmailForm.reset();
+  
 }
